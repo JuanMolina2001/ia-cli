@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  --background-color: #1e1e1e;
+  /* Fondo oscuro */
+  --font-color: #c5c6c7;
+  /* Texto claro */
+  --primary-color: #4caf50;
+  /* Color principal para links y botones */
+  --secondary-color: #9ca2ab;
+  /* Color secundario */
+  --code-bg-color: #2d2d2d;
+  /* Fondo para bloques de código */
+  --invert-font-color: #ffffff;
+  /* Color de texto invertido */
+}
+
+/* Opcional: Cambiar el estilo de selección de texto */
+::selection {
+  background-color: var(--primary-color);
+  color: var(--invert-font-color);
+}

@@ -1,0 +1,19 @@
+# Dependencias instaladas por npm
+/node_modules
+
+# Archivos generados por npm
+package-lock.json
+
+# Archivos de configuración de npm
+.npmrc
+
+# Archivos de caché de npm
+.npm
+
+# Archivos de registro de npm
+logs
+
+# Archivos de respaldo
+*.log
+*.bak
+*.swp
