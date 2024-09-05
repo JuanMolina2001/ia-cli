@@ -4,10 +4,10 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "start": "node index.js",
-    "electron": "electron image.js",
-    
-    "dev": "vite",
+    "start": "node --trace-uncaught  --watch index.js",
+    "electron": "electron ./app",
+    "build": "vite build ./render",
+    "dev": "vite ./render",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -17,8 +17,10 @@
   "dependencies": {
     "@google/generative-ai": "^0.17.1",
     "chalk": "^5.3.0",
+    "cli-markdown": "^3.4.0",
     "electron": "^31.2.1",
     "terminal.css": "^0.7.5",
+    "ts-node": "^10.9.2",
     "vite": "5.4.0"
   },
   "devDependencies": {
